@@ -14,7 +14,7 @@ const Counter = () => {
     },[count]);
     return (
         <div className="flex flex-col items-center h-screen bg-yellow-400 p-4">
-            <div className=" flex items-center justify-center bg-yellow-400 shadow-lg rounded-[25px] border-8 border-white  w-[100px] h-[54px]">
+            <div className=" flex items-center justify-center bg-yellow-400 shadow-lg rounded-[25px] border-8 border-white  w-auto px-4">
           <h1 className="text-4xl font-bold text-white">{count}</h1>
         </div>
         {/* Counter Display

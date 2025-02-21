@@ -31,7 +31,7 @@ const Counter = () => {
           </div>
           <div className='flex flex-col items-center w-full mb-8'>
           <button
-          className=" bg-yellow-400 hover:bg-yellow-400 text-white font-semibold px-6 py-3 rounded-full text-4xl absolute bottom-8 w-[149] border-8 border-white"
+          className=" bg-yellow-400 hover:bg-yellow-400 text-white font-semibold px-6 py-3 rounded-full text-4xl absolute bottom-8 w-[149] border-8 border-white flex items-center justify-center"
           onClick={() => setCount(count + 1)}
         >
          Count

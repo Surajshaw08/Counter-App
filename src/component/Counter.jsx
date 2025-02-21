@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import RestartAltTwoToneIcon from '@mui/icons-material/RestartAltTwoTone';
+
 
 
 const Counter = () => {
@@ -11,30 +13,28 @@ const Counter = () => {
         localStorage.setItem('counterValue', count);
     },[count]);
     return (
-        <div className="flex flex-col items-center h-screen bg-gray-500 p-4">
-            <div className="mb-6 p-4 bg-white shadow-lg rounded-lg">
-          <h1 className="text-4xl font-bold">{count}</h1>
+        <div className="flex flex-col items-center h-screen bg-yellow-400 p-4">
+            <div className=" flex items-center justify-center bg-yellow-400 shadow-lg rounded-[25px] border-8 border-white  w-[100px] h-[54px]">
+          <h1 className="text-4xl font-bold text-white">{count}</h1>
         </div>
-        {/* Counter Display */}
+        {/* Counter Display
         <div className="mb-6 p-4 bg-white shadow-lg rounded-lg">
           <h1 className="text-4xl font-bold">Counter</h1>
-        </div>
+        </div> */}
   
         {/* Button Section */}
-        <div className="flex flex-col items-center w-full mb-8">
-        <button
-            className="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-full absolute bottom-50"
-            onClick={() => setCount(0)}
+        <div className="flex flex-col items-center justify-center mt-15 mb-8  bg-white w-[90px] h-[50px] rounded-full">
+        <button className='' onClick={() => setCount(0)}
           >
-            Reset
+            <RestartAltTwoToneIcon/>
           </button>
           </div>
           <div className='flex flex-col items-center w-full mb-8'>
           <button
-          className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full text-4xl absolute bottom-8"
+          className=" bg-yellow-400 hover:bg-yellow-400 text-white font-semibold px-6 py-3 rounded-full text-4xl absolute bottom-8 w-[149] border-8 border-white"
           onClick={() => setCount(count + 1)}
         >
-         +
+         Count
         </button>
           </div>
           

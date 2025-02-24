@@ -31,14 +31,15 @@ const Counter = () => {
       </div>
       {/* Increment Section */}
       <div
-        className="flex flex-col items-center w-full mb-8 relative h-screen"
+        className="flex flex-col items-center border-black rounded-[20px] w-70 h-60 cursor-pointer shadow-[0_4px_15px_rgba(0,0,0,3)] absolute bottom-5"
         onClick={() => setCount(count + 1)} // Div click logic
       >
-        <button
+        <img className=' w-45 h-50 mt-4' src="hands-click-png-icon-5.png" alt="" />
+        {/* <button
           className="bg-yellow-400 hover:bg-yellow-400 text-white font-semibold px-6 py-3 rounded-full text-4xl   w-[149px] border-8 border-white flex items-center justify-center absolute bottom-8"
         >
           Count
-        </button>
+        </button> */}
       </div>
 
 
